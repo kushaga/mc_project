@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mc_project"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.mc_project.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mc_project.Nav_Main"
+            android:label="@string/title_activity_nav__main"
+            android:parentActivityName="android.intent.action.MAIN">
+        </activity>
+        <activity android:name="com.example.mc_project.Auto" />
+        <activity android:name="com.example.mc_project.Metro" />
+        <activity android:name="com.example.mc_project.Taxi" />
+        <activity
+            android:name="com.example.mc_project.Main_Page"
+            android:label="@string/title_activity_main__page" >
+        </activity>
+    </application>
+
+</manifest>
